@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Friends Forever</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("img/5.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background-color: #ff69b4;
+            color: white;
+            padding: 1em;
+        }
+        .container {
+            padding: 2em;
+        }
+        .friends-gallery img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 10px;
+            transition: transform 0.3s;
+        }
+        .friends-gallery img:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            background-color: #ff69b4;
+            color: white;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Best Friends Forever</h1>
+    </header>
+
+    <div class="container">
+        <h2>Welcome to Our Friendship Page!</h2>
+        <p>Celebrating the bond of friendship with our favorite people.</p>
+
+        <div class="friends-gallery">
+            <h3>Our Friends Gallery</h3>
+            <img src="img/friend3.jpg" alt="Friend 1">
+            <img src="img/friend1.jpg" alt="Friend 2">
+            <img src="img/friend 2.jpg" alt="Friend 3">
+            
+        </div>
+
+        <button onclick="showMessage()">Click Me!</button>
+        <p id="message"></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Best Friends Forever. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerHTML = "Happy Friendship Day";
+            document.getElementById("message").style.color = "White";
+        }
+    </script>
